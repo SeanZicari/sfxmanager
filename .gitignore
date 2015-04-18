@@ -1,3 +1,4 @@
 env
 .idea
 src/doc/_*
+*.pyc

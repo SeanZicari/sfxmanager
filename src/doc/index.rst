@@ -5,7 +5,7 @@ SFXManager
 The SFXManager is a distributed python application that uses ZeroMQ for
 communication.
 
-Contents:
+*SubSystems*
 
 .. toctree::
    :maxdepth: 2
