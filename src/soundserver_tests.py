@@ -15,6 +15,7 @@ class SoundServerTests(unittest.TestCase):
         ctx = zmq.Context()
         socket = ctx.socket(zmq.REQ)
         socket.connect('tcp://localhost:{0}'.format(CONTROL_PORT))
+        socket.rcvtimeo = 1
 
         # ZMQ connections do not fail when the other end doesn't exist - need
         # to actually receive a response to verify all is well
